@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil Rafif An Naafi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Rafif An Naafi</h1>
+    <nav>
+      <a href="#profil">Profil</a> |
+      <a href="#jadwal">Jadwal</a> |
+      <a href="#form">Form</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="profil">
+      <h2>Profil</h2>
+      <p>Nama: Rafif An Naafi</p>
+      <p>NIM: 607022500023</p>
+      <p>Kelas: D3TK 49-01</p>
+    </section>
+
+    <div class="konten">
+      <section id="jadwal">
+        <h2>Jadwal Kuliah</h2>
+        <table border="1">
+          <tr>
+            <th>No</th>
+            <th>Mata Kuliah</th>
+            <th>Hari</th>
+            <th>Jam</th>
+          </tr>
+          <tr><td>1</td><td>Pemrograman Web</td><td>Senin</td><td>07.30</td></tr>
+          <tr><td>2</td><td>Basis Data</td><td>Selasa</td><td>09.30</td></tr>
+          <tr><td>3</td><td>Jaringan Komputer</td><td>Rabu</td><td>13.00</td></tr>
+          <tr><td>4</td><td>Sistem Digital</td><td>Kamis</td><td>07.30</td></tr>
+          <tr><td>5</td><td>Algoritma</td><td>Jumat</td><td>08.00</td></tr>
+        </table>
+      </section>
+
+      <section id="form">
+        <h2>Form Data</h2>
+        <form action="#">
+          <label for="nama">Nama:</label><br>
+          <input type="text" id="nama" name="nama"><br>
+
+          <label for="nim">NIM:</label><br>
+          <input type="text" id="nim" name="nim"><br>
+
+          <label for="jurusan">Jurusan:</label><br>
+          <select id="jurusan" name="jurusan">
+            <option value="TI">Teknik Informatika</option>
+            <option value="SI">Sistem Informasi</option>
+            <option value="TK">Teknik Komputer</option>
+          </select><br>
+
+          Hobi:<br>
+          <input type="checkbox" name="hobi" value="Membaca"> Membaca<br>
+          <input type="checkbox" name="hobi" value="Olahraga"> Olahraga<br>
+          <input type="checkbox" name="hobi" value="Bersepeda"> Bersepeda<br>
+
+          <input type="submit" value="Kirim">
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <p>Rafif An Naafi - 607022500023 - D3TK 49-01</p>
+  </footer>
+
+</body>
+</html>

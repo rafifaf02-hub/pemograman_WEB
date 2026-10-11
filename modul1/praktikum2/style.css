@@ -1,0 +1,55 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f6f4;
+  color: #222222;
+  margin: 0;
+}
+
+header, footer {
+  background-color: #12372a;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+header h1 { margin: 0 0 8px 0; }
+header a { color: white; }
+
+main { padding: 20px; }
+
+section { margin-bottom: 20px; }
+
+/* Flexbox: tabel dan form berdampingan */
+.konten {
+  display: flex;
+  gap: 30px;
+}
+
+#jadwal { flex: 2; }
+#form { flex: 1; }
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  background-color: white;
+}
+
+th, td { padding: 8px; text-align: left; }
+th { background-color: #12372a; color: white; }
+
+input[type="text"], select {
+  width: 100%;
+  padding: 6px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  margin-top: 10px;
+  padding: 8px 16px;
+}
+
+/* Media query: tampilan mobile */
+@media (max-width: 768px) {
+  .konten { flex-direction: column; }
+}
