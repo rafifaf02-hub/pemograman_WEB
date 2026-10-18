@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Profil Saya</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Profil saya</h1>
+  <p>Halo! Saya mahasiswa D3 Teknologi Komputer. Silakan hubungi saya lewat form di bawah.</p>
+
+  <h2>Hubungi saya</h2>
+
+  <form name="formKontak" onsubmit="return validateForm()" novalidate>
+    <label for="nama">Nama lengkap</label>
+    <input type="text" id="nama" name="nama">
+    <div class="error" id="errNama"></div>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email">
+    <div class="error" id="errEmail"></div>
+
+    <label for="hp">Nomor HP</label>
+    <input type="text" id="hp" name="hp">
+    <div class="error" id="errHp"></div>
+
+    <label for="pesan">Pesan</label>
+    <textarea id="pesan" name="pesan" rows="4"></textarea>
+    <div class="error" id="errPesan"></div>
+
+    <button type="submit">Kirim pesan</button>
+  </form>
+
+  <div id="hasil"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

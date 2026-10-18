@@ -4,63 +4,133 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wastu Djaya Coffee Shop</title>
+    <!-- External CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
-     <header>
+    <!-- Header / Navigasi (anchor internal) -->
+    <header>
         <div class="logo">
             <div class="logo-icon"></div>
             <h2>Wastu Djaya</h2>
         </div>
 
         <nav>
-            <a href="#">Home</a>
-            <a href="#">Makanan</a>
-            <a href="#">Minuman</a>
-            <a href="#">Tentang Kami</a>
+            <a href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#daftar-harga">Daftar Harga</a>
+            <a href="#pesan">Pesan</a>
         </nav>
-
     </header>
 
+    <main>
+        <!-- Banner -->
+        <section class="banner" id="home">
+            <h1>Wastu Djaya Coffee Shop</h1>
+            <p>Nikmati kopi dan makanan favoritmu</p>
+        </section>
 
-    <!-- Banner -->
-    <section class="banner">
-        <h1>Wastu Djaya Coffee Shop</h1>
-        <p>Nikmati kopi dan makanan favoritmu</p>
-    </section>
+        <!-- Produk -->
+        <section class="produk" id="menu">
+            <h2>Menu Pilihan</h2>
 
-  
-    <!-- Banner -->
-    <section class="banner">
-        <h1>Wastu Djaya Coffee Shop</h1>
-        <p>Nikmati kopi dan makanan favoritmu</p>
-    </section>
+            <div class="produk-container">
+                <div class="produk-card">
+                    <div class="gambar"></div>
+                    <h3>Minuman</h3>
+                </div>
 
+                <div class="produk-card">
+                    <div class="gambar"></div>
+                    <h3>Makanan</h3>
+                </div>
 
-    <!-- Produk -->
-    <section class="produk">
-        <h2>Menu Pilihan</h2>
+                <div class="produk-card">
+                    <div class="gambar"></div>
+                    <h3>Snack</h3>
+                </div>
+            </div>
+        </section>
 
-        <div class="produk-container">
-
-            <div class="produk-card">
-                <div class="gambar"></div>
-                <h3>Minuman</h3>
+        <!-- Konten utama: Tabel + Form (berdampingan dengan Flexbox) -->
+        <section class="konten">
+            <div class="kolom" id="daftar-harga">
+                <h2>Daftar Harga</h2>
+                <div class="tabel-wrap">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>No</th>
+                                <th>Menu</th>
+                                <th>Kategori</th>
+                                <th>Harga</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Kopi Susu Gula Aren</td>
+                                <td>Minuman</td>
+                                <td>Rp 22.000</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Americano</td>
+                                <td>Minuman</td>
+                                <td>Rp 18.000</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Nasi Goreng Spesial</td>
+                                <td>Makanan</td>
+                                <td>Rp 28.000</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Roti Bakar Coklat</td>
+                                <td>Snack</td>
+                                <td>Rp 15.000</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Kentang Goreng</td>
+                                <td>Snack</td>
+                                <td>Rp 17.000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
 
-            <div class="produk-card">
-                <div class="gambar"></div>
-                <h3>Makanan</h3>
+            <div class="kolom" id="pesan">
+                <h2>Form Pemesanan</h2>
+                <form action="#" method="post">
+                    <label for="nama">Nama:</label>
+                    <input type="text" id="nama" name="nama" placeholder="Masukkan nama">
+
+                    <label for="telepon">No. Telepon:</label>
+                    <input type="tel" id="telepon" name="telepon" placeholder="08xxxxxxxxxx">
+
+                    <label for="kategori">Kategori:</label>
+                    <select id="kategori" name="kategori">
+                        <option>Minuman</option>
+                        <option>Makanan</option>
+                        <option>Snack</option>
+                    </select>
+
+                    <p class="label-grup">Pilihan penyajian:</p>
+                    <label class="pilihan"><input type="radio" name="saji" value="dine-in" checked> Makan di tempat</label>
+                    <label class="pilihan"><input type="radio" name="saji" value="take-away"> Dibawa pulang</label>
+
+                    <label for="catatan">Catatan:</label>
+                    <textarea id="catatan" name="catatan" rows="3" placeholder="Contoh: kopi tanpa gula"></textarea>
+
+                    <button type="submit">Kirim Pesanan</button>
+                </form>
             </div>
-
-            <div class="produk-card">
-                <div class="gambar"></div>
-                <h3>Snack</h3>
-            </div>
-
-        </div>
-    </section>
-
+        </section>
+    </main>
 
     <!-- Footer -->
     <footer>
@@ -68,8 +138,6 @@
             <h3>Wastu Djaya</h3>
             <p>Tempat menikmati kopi dan makanan favorit.</p>
         </div>
-
     </footer>
-
 </body>
 </html>
