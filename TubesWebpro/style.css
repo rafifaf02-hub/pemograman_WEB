@@ -112,6 +112,8 @@ nav a:focus {
     margin-bottom: 12px;
 }
 
+
+
 .produk-card:nth-child(2) .gambar { background-color: #b9c7b4; }
 .produk-card:nth-child(3) .gambar { background-color: #e2b98a; }
 
@@ -154,7 +156,7 @@ th, td {
 }
 
 th {
-    background-color: #2b1d16;
+    background-color: #f5eee4;
     color: #f5eee4;
 }
 
@@ -267,4 +269,5 @@ footer h3 {
         flex: none;
         width: 100%;
     }
+    
 }

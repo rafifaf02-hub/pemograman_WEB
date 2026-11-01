@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyek Web Sederhana</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Blog Cooffee</h1>
+        <nav>
+            <a href="#artikel">Artikel</a>
+            <a href="#kontak">Kontak</a>
+        </nav>
+    </header>
+
+    <main>
+        <article id="artikel">
+            <h2>COFFE SHOOP</h2>
+            <p>Selamat datang di Coffee Shop kami!</p>
+        </article>
+
+        <section id="kontak">
+            <h2>Hubungi Kami</h2>
+            <form id="formKontak" novalidate>
+                <input type="text" id="nama" placeholder="Nama">
+                <span class="error" id="errNama"></span>
+
+                <input type="email" id="email" placeholder="Email">
+                <span class="error" id="errEmail"></span>
+
+                <textarea id="pesan" rows="4" placeholder="Pesan"></textarea>
+                <span class="error" id="errPesan"></span>
+
+                <button type="submit">Kirim</button>
+            </form>
+        </section>
+    </main>
+
+    <footer><p>Hak Cipta &copy; 2024</p></footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
