@@ -1,0 +1,27 @@
+body {
+font-family: Arial, sans-serif;
+margin: 30px;
+}
+
+h2 {
+color: #333333;
+}
+
+label {
+display: inline-block;
+width: 170px;
+font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+width: 200px;
+padding: 5px;
+border: 1px solid #999999;
+}
+
+input[type="submit"] {
+padding: 6px 20px;
+cursor: pointer;
+}
